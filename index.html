@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sudoku Solver</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Sudoku <span>Solver</span></h1>
+
+            <p>
+                Automated puzzle solving using
+                the Backtracking Algorithm
+            </p>
+        </div>
+
+
+        <div class="app">
+
+            <!-- TIMER -->
+            <div class="timer-box">
+
+                <div class="timer-label">
+                    Solving Time
+                </div>
+
+                <div id="timer">
+                    00:00
+                </div>
+
+            </div>
+
+
+            <!-- SUDOKU BOARD -->
+            <div class="board-container">
+
+                <div id="board"></div>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+            <div class="controls">
+
+                <button
+                    class="solve"
+                    onclick="solveSudoku()">
+
+                    Solve Puzzle
+
+                </button>
+
+
+                <button
+                    class="reset"
+                    onclick="resetBoard()">
+
+                    Reset
+
+                </button>
+
+
+                <button
+                    class="clear"
+                    onclick="clearBoard()">
+
+                    Clear
+
+                </button>
+
+            </div>
+
+
+            <!-- STATUS -->
+            <div id="status">
+                Enter numbers to start solving.
+            </div>
+
+
+            <!-- STATS -->
+            <div class="stats">
+
+                <div>
+                    Attempts
+
+                    <div
+                        class="stat-value"
+                        id="attempts">
+
+                        0
+
+                    </div>
+                </div>
+
+
+                <div>
+                    Empty Cells
+
+                    <div
+                        class="stat-value"
+                        id="empty">
+
+                        51
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- ALGORITHM -->
+            <div class="algorithm">
+
+                <strong>Algorithm:</strong>
+
+                Recursive Backtracking with
+                Row, Column and 3×3 Box
+                Constraint Checking
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
